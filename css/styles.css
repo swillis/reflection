@@ -12,7 +12,7 @@ body {
     font-family: 'Helvetica Neue', helvetica;
     line-height: 1.2em;
     color: #8f9298;
-    min-width: 960px;
+    /*min-width: 960px;*/
 }
 h1, h2, h3, h4, h5, h6 {
     color: #484a50;
@@ -76,7 +76,7 @@ select {
     overflow: hidden;
     height: auto;
     background: #363744 url('../images/header_bg.jpg') fixed no-repeat bottom;
-    height: 100%}
+    min-height: 100%}
 .no-touch #header {
     background-attachment: fixed;
 }
@@ -215,6 +215,9 @@ transition: all .4s ease-in-out;
 #menu-mobile:hover, #menu-mobile.active {
     background-image: url(../images/menu-hover.svg);
 }
+#menu-mobile #top-navigation li a {
+    display: none;
+}
 .about {
    text-align: left;
    margin-bottom: 15px;
@@ -285,7 +288,7 @@ section h1 {
 #contacts
 .member {
     margin-bottom: 2em;
-    min-heighti: 230px;
+    min-height: 230px;
 }
 .member:last-child {
     margin-bottom: 0;
