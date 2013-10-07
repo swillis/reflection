@@ -17,7 +17,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #484a50;
     letter-spacing: -1px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: AvenirNextLTPro-Demi, Arial, sans-serif;
 }
 
@@ -75,7 +75,7 @@ select {
 #header {
     overflow: hidden;
     height: auto;
-    background: #363744 url('../images/header_bg.jpg') fixed no-repeat bottom;
+    background: #343543 url('../images/header_bg.png') fixed repeat-x bottom;
     min-height: 100%}
 .no-touch #header {
     background-attachment: fixed;
@@ -204,22 +204,10 @@ margin: 0 10px;
     margin-top: 10px;
 }
 .menu-mobile {
-
+=
     color: red !important;
-
-/*    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/menu.svg);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    cursor: pointer;*/
 }
-/*#menu-mobile:hover, #menu-mobile.active {
-    background-image: url(../images/menu-hover.svg);
-}*/
+
 .about {
    text-align: left;
    margin-bottom: 15px;
@@ -269,6 +257,7 @@ margin: 0 10px;
 }
 .team p {
     margin: 20px 0 0;
+    font-size: 14px;
 }
 
 #call-to-action {
@@ -277,11 +266,11 @@ margin: 0 10px;
 #call-to-action h2 {
    font-size: 18px;
    color: white;
-   text-align: left;
+   text-align: center;
    margin-bottom: 40px;
 }
 #call-to-action a {
-text-align: left;
+text-align: center;
    padding: 15px 20px;
    border: 2px solid white;
    color: white;
@@ -721,7 +710,7 @@ input {
 }
 input[type=text] {
     margin-bottom: 15px;
-    height: 40px;
+    height: 55px;
     border-radius: 5px !important;
     border: 2px solid #e9eaef !important;
 }
@@ -825,7 +814,14 @@ span.valid {
 #contacts span.error,
 #contacts span.valid {
     position: absolute;
-    top: 0;
+    top: 8px;
+    right: 1em;
+}
+
+.signup span.error,
+.signup span.valid  {
+    position: absolute;
+    top: 10px;
     right: 1em;
 }
 footer {
@@ -1089,10 +1085,11 @@ section {
     background: #363744;
     text-align: center;
     margin-top: 80px;
+    position: relative;
 }
 
-#registration h1 {
-    color: white;
+#registration img {
+    margin-bottom: 30px;
 }
 
 #registration p {
@@ -1106,6 +1103,7 @@ section {
 }
 
 #registration .details {
+    position: relative;
    display: inline;
    height: 60px;
    border-radius: 5px;

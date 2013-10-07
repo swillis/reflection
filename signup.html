@@ -3,7 +3,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   
-  <title>Signup - Reflection - Powerful market intelligence for the global app market.</title>
+  <title>Request Invite - Reflection - Powerful market intelligence for the global app market.</title>
 
   <link href="favicon.ico" rel="icon" type="image/x-icon" />
   
@@ -19,16 +19,63 @@
 </head>
 <body id='registration'>
   <div class='signup'>
-    <h1>Sign up to Reflection</h1>
+    <img src="images/logo.png" alt="logo" />
     <p>This is a good reasonto signup to Reflection.</p>
-    <form>
-      <div class='validation'>
-      <input class='details' type='text' name='FirstName' placeholder='First name...'>
-      <input class='details' type='text' name='LastName' placeholder='Last name...'>
-      <input class='details' type='text' name='Email' placeholder='Email address...'>
-    </div>
-      <input type='submit' class='submit-signup'>
+
+    <form id="contact-form" action="/" method="post">
+      <div class="row"> 
+        <div class="large-12 columns formContainer">
+          <input type="text" name="name" id="name" value="" class="requiredField details" placeholder="First name">
+        </div>
+        <div class="large-12 columns formContainer">
+          <input type="text" name="name" id="name" value="" class="requiredField details" placeholder="Last name">
+        </div>
+        <div class="large-12 columns formContainer">
+          <input type="text" name="email" id="email" value="" class="requiredField email details" placeholder="Email Address">
+        </div>
+        <div class="large-12 columns formContainer">
+          <input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="submit-signup" type="submit">SUBMIT</button>
+        </div>
+        <div class="large-12 columns formContainer">
+          <p id="error" data-alert class="alert-box">Please fill in all data correctly.</p>
+          <p id="thanks" data-alert class="alert-box success">Thanks. We'll get back to you as soon as possible.</p>
+          <p id="timedout" data-alert class="alert-box">The connection to the server timed out.</p>
+          <p id="state" data-alert class="alert-box"></p>
+        </div>
+      </div>
     </form>
+
+    <!-- <form>
+      <div class=''
+      <input class='details' type='text' name='FirstName' placeholder='First name...'>
+      <input class='details' type='text' name='FirstName' placeholder='Last name...'>
+      <input class='requiredField email details' type='text' name='email' placeholder='Email address...'>.signup
+      <input type='submit' class='submit-signup'>
+    </form> -->
+
+
   </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+    
+  <script>$(document).foundation();</script>
+
+  <!-- Jquery Scripts -->
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/jquery.easing.js"></script>
+  
+  <!-- Swiper Plugin -->
+  <script  src="js/idangerous.swiper-1.9.3.js"></script>
+  
+  <!-- Feed Plugins -->
+  <script src="js/jquery.tweet.js"></script>
+  <script src="js/jquery.flickr.js"></script>
+  <script src="js/jquery.instagram.js"></script>
+  
+  <!-- Cotton Specific Scripts -->
+
+  <script src="js/scripts.js"></script>
+
 </body>
 </html>
