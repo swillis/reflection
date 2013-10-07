@@ -70,7 +70,7 @@ jQuery(document).ready(function() {
 	    if(jQuery(window).width()>767){	
 			if (jQuery("#top-navigation ul").is(":hidden") ) {
 			    jQuery("#top-navigation ul").show();
-			   	jQuery('#menu-mobile').removeClass('active');		
+			   	jQuery('#menu-mobile').removeClass('active');			
 			}
 	    }
 	});
